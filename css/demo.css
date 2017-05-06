@@ -1,0 +1,57 @@
+*{
+	margin:0;padding:0;
+}
+body{
+	background:rgb(55,76,86);
+}
+.photo{
+	width: 320px;height: 600px;background: #222;margin: 50px auto;
+	box-shadow: 0 0 7px 1px #fff;/*水平偏移值  垂直偏移值  边缘模糊度  阴影范围大小   阴影颜色*/
+	border-radius: 20px;padding: 5px;
+}
+.photo .top{
+	width: 320px;height: 23px;
+	background: url(../img/1.png);
+}
+.photo .title{
+	width:320px;height: 30px;background: url(../img/2.png);color: #ccc;text-align: center;line-height: 30px;
+	font-weight: bold;
+}
+.photo .singer{
+	color: #ccc;height: 30px;line-height: 30px;font-size: 14px;text-align: center;
+}
+.photo .play{
+	width: 190px;height: 190px;margin: 0 auto;background: url(../img/3.png);
+	border-radius: 50%;
+}
+.photo .lrc{
+	height: 285px;margin-top: 20px;overflow: hidden;
+}
+.photo .lrc .content{
+	position: relative;top: 0;left: 0;
+}
+.photo .lrc p{
+	color: #ccc;font-size: 12px;text-align: center;line-height: 20px;
+}
+/*动画名-执行 时间-执行类型-执行次数*/
+.rotate{
+	-webkit-animation:rot 5s linear infinite ;
+}
+
+/*关键帧*/
+@keyframes rot{                 
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+
+#txt{
+	display: none;
+}
+
+
+
+
+
+
+
+
